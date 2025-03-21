@@ -2,23 +2,53 @@ body {
     background-color: plum;
 }
 
+/* NAVBAR */
+
 .navbar {
-    background-color: whitesmoke;
-    position: sticky;
-    padding: 30px 0px;
+    background-color: lavender;
+
+    /* Turn this object into a flex container for easy positioning of elements. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 24px;
 }
 
 .navbar img {
-    position: relative;
-    width: 180px;
-    margin: 0px 80px;
+    padding: 0px 40px;
+    width: 140px;
 }
 
-.navbar p {
-    float: right;
-    font-size: 32px;
-    margin: 0px 3%;
+.navbar_links {
+    font-size: 24px;
+
+    /* So, like in the practice problem I did earlier, some elements have 
+    padding and margin automatically applied. Divs don't, but the ul elements
+    do. */
 }
+
+.navbar_links ul {
+    /* At THIS POINT (lowest level of where the individual sections of links are) is where
+    you can put the display: grid. */
+    display: grid;
+    grid-auto-flow: column;
+
+    list-style: none;
+
+    border-radius: 24px;
+
+    /* Set padding and margin to 0. Pretty sure this one just has inherent padding applied, 
+    but just being sure. */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar_links ul li {
+    padding: 40px;
+}
+
+/* HEADER - IMAGE AND PRESENTING TEXT */
 
 .header {
     position: static;
@@ -29,6 +59,34 @@ body {
     font-size: 72px;
 }
 
+.header h4 {
+    font-size: 20px;
+}
+
 .header img {
-    width: 40%;
+    width: 50%;
+}
+
+/* MAIN BODY SECTION */
+
+.info {
+    color: #444444;
+    margin: 0 24%;
+    padding: 20px 80px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.info h3 {
+    font-size: 36px;
+}
+
+.info li {
+    font-size: 24px;
+}
+
+/* ENDING SECTION */
+
+.bottom_section {
+    text-align: center;
 }
