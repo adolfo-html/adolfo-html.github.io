@@ -80,6 +80,8 @@ body {
 
 .header img {
     width: 50%;
+
+    border: 10px solid whitesmoke;
 }
 
 /* ANIMATION FOR NAME - HELL YEAH BABY!!!!!!!!!!!! */
