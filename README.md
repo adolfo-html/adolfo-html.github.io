@@ -12,3 +12,7 @@ Apr 10 2025
 So I'm back to editing this and I honestly think it looks great so far. I'm going to focus on adding PRACTICAL things now. Including:
 - A subpage displaying my resume
 - A subpage providing my business contact info
+
+April 23 2025
+
+I'm awesome. I'm personalizing it for fun right now but honestly I should probably get to work on the contacts page. Anyway finals are happening right now and this is my way of procrastinating? LOL I guess that's a good thing because there are other worse ways I could procrastinate, but anyway yeah I added the image to the back and improved a lot of style stuff.

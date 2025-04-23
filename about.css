@@ -91,6 +91,8 @@ body {
     margin: 10% 80px;
     padding: 70px 0;
 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
     border: 10px solid whitesmoke;
     border-radius: 100px;
 
@@ -103,6 +105,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     margin: 40px;
 }
