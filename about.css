@@ -58,9 +58,95 @@ body {
     color: #BBBEFE;
 }
 
-/* SHOULD ALSO BE ON EVERY PAGE */
-.bottom_section {
+/* The slide-in animation on page load */
+
+@keyframes slideFadeIn
+{
+    0% {
+        transform: translateX(0px);
+        transform: opacity(0%);
+    }
+
+    100% {
+        transform: translateX(40px);
+        transform: opacity(100%);
+    }
+}
+
+.bigheader {
+    transform: translateX(40px);
+    font-size: 160px;
+
+    color: whitesmoke;
+
+    text-shadow: 0px 0px 24px #a83ca8;
+
+    animation: 1s ease-out 0s 1 slideFadeIn;
+}
+
+/* The intro to the sections */
+
+.intro_display {
     text-align: center;
+    margin: 10% 80px;
+    padding: 70px 0;
+
+    border: 10px solid whitesmoke;
+    border-radius: 100px;
+
+    box-shadow: 0px 0px 40px #a83ca8;
+}
+
+/* The section with three columns */
+
+.three-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
+    margin: 40px;
+}
+
+/* The three columns themselves (all matching) */
+.infodiv {
+    text-align: center;
+    padding: 0 24px;
+    margin: 0 10px;
+
+    border: 8px solid whitesmoke;
+    border-radius: 50px;
+
+    box-shadow: 0px 0px 30px #a83ca8;
+}
+
+.infodiv h2 {
+    color: whitesmoke;
+
+    text-shadow: 0px 0px 24px #a83ca8;
+}
+
+
+/* ENDING SECTION - Every page :) */
+
+.bottom_section {
+    position: relative;
+    text-align: center;
+}
+
+/* BACKGROUND STICKY IMAGE (God this was annoying) */
+
+.bg_container {
+    position: absolute;
+
+    left: -20px;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+.bg_container img {
+    width: 700px;
+    transform: translateY(20px);
 }
 
 /* Page-specific styling :) */

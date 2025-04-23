@@ -88,10 +88,27 @@ body {
     box-shadow: 0px 0px 40px #a83ca8;
 }
 
+/* ENDING SECTION - Every page :) */
 
-/* SHOULD ALSO BE ON EVERY PAGE */
 .bottom_section {
+    position: relative;
     text-align: center;
+}
+
+/* BACKGROUND STICKY IMAGE (God this was annoying) */
+
+.bg_container {
+    position: absolute;
+
+    left: -20px;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+.bg_container img {
+    width: 700px;
+    transform: translateY(20px);
 }
 
 /* Page-specific styling :) */
