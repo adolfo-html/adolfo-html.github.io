@@ -5,6 +5,11 @@
     src: url('bodoni.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Celestia';
+    src: url('Celestia.otf') format('opentype');
+}
+
 body {
     background-color: #c2abe7;
 }
@@ -13,6 +18,7 @@ body {
 
 .navbar {
     position: sticky;
+    top: 8px;
 
     z-index: 6;
 }
@@ -50,7 +56,10 @@ body {
 .header {
     position: relative;
 
+    font-family: 'Celestia';
     font-size: 64px;
+    text-shadow: 4px 2px #9b82c3;
+
     margin: 40px 0;
     max-width: min-content;
 
@@ -105,6 +114,8 @@ body {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .linkheader {
