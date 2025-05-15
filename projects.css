@@ -145,9 +145,36 @@ body {
     }
 }
 
+
 /* Responsive styling */
 
 @media (max-width: 768px) {
+
+    /* Responsive navbar (every page) */
+    
+    .navbar_contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlinks {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 48px;
+        text-shadow: 8px 4px #9b82c3;
+    }
+
+    .icon img {
+        height: 32px;
+        margin: 10px 0;
+    }
+
+    /* Also making the animation for this page responsive! */
+
     .header {
         margin: 40px auto;
         transform: translateX(0);
