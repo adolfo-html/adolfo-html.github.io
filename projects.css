@@ -1,0 +1,135 @@
+/* Basic page stuff (add font, etc) */
+
+@font-face {
+    font-family: 'Bodoni';
+    src: url('Bodoni.woff') format('woff');
+}
+
+body {
+    background-color: #c2abe7;
+}
+
+/* Navbar */
+
+.navbar {
+    position: sticky;
+
+    z-index: 6;
+}
+
+.navbar_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon img {
+    height: 40px;
+    padding: 4px 0 0 0;
+    margin: 0 20px;
+}
+
+.navlinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    margin: 0 20px;
+}
+
+.navlinks a {
+    color: black;
+
+    text-align: center;
+    font-family: 'Bodoni';
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+/* Header (above the actual table) */
+
+.header {
+    position: relative;
+
+    font-size: 64px;
+    margin: 40px 0;
+    max-width: min-content;
+
+    opacity: 0;
+    transform: translateX(40px);
+    animation: headerIn 1s ease-out forwards;
+}
+
+
+
+/* Link table */
+
+.linktable {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 64px;
+}
+
+.linkbox {
+    position: relative;
+
+    text-decoration: none;
+
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    animation: floatUp 1s ease-out forwards;
+
+    transform: translateY(500px);
+
+    transition: box-shadow 0.3s ease;
+}
+
+.linkbox:hover {
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.2);
+}
+
+.linkbox img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.linkcontent {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.linkheader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: black;
+}
+
+.linksubtitle {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Animations */
+
+@keyframes floatUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes headerIn {
+    to {
+        opacity: 1;
+        transform: translateX(120px);
+    }
+}

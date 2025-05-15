@@ -1,0 +1,177 @@
+/* Applying the OUTSIDE font for the header! (legally obtained btw) */
+@font-face {
+    font-family: 'Celestia';
+    src: url('Celestia.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bodoni';
+    src: url('Bodoni.woff') format('woff');
+}
+
+/* Basic page stuff before animation :) */
+
+body {
+    background-color: #c2abe7;
+
+    overflow: hidden;
+}
+
+/* Navbar, fades in after title */
+
+.navbar {
+    position: sticky;
+    overflow: hidden;
+
+    z-index: 6;
+
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 3s;
+}
+
+.navbar_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon img {
+    height: 40px;
+    padding: 4px 0 0 0;
+    margin: 0 20px;
+    background-color: #c2abe7;
+}
+
+.navlinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    margin: 0 20px;
+}
+
+.navlinks a {
+    color: black;
+
+    text-align: center;
+    font-family: 'Bodoni';
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+/* The title, which fades in after the background animation */
+
+.title {
+    position: absolute;
+
+    z-index: 6;
+
+    font-family: 'Celestia';
+    font-size: 80px;
+    color: #fdd6a6;
+    text-shadow: 16px 8px #9b82c3;
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 2s;
+}
+
+/* Sections for animation */
+
+.sky_section {
+    position: absolute;
+
+    width: 200%;
+    height: 200vw;
+
+    border-radius: 50%;
+
+    left: -50%;
+
+    transform: translateY(-10%);
+}
+
+.section_1 {
+    background-color: #b39adb;
+    z-index: 1;
+
+    animation: skyDropInLow 3s ease-out forwards;
+    animation-delay: 0.8s;
+}
+.section_2 {
+    background-color: #a489ce;
+    z-index: 2;
+
+    animation: skyDropInMed 3s ease-out forwards;
+    animation-delay: 0.4s;
+}
+.section_3 {
+    background-color: #9b82c3;
+    z-index: 3;
+
+    animation: skyDropInHi 3s ease-out forwards;
+    animation-delay: 0.0s;
+}
+
+/* Animation stuff */
+
+@keyframes skyDropInLow {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes skyDropInMed {
+    to {
+        transform: translateY(5%);
+    }
+}
+
+@keyframes skyDropInHi {
+    to {
+        transform: translateY(10%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Stars */
+
+.star {
+    position: absolute;
+    
+    width: 4px;
+    height: 4px;
+    background: white;
+    opacity: 0;
+    border-radius: 50%;
+
+    z-index: 5;
+
+    animation: twinkle 2s ease-in infinite;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

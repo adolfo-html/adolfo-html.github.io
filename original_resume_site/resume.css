@@ -1,0 +1,124 @@
+body {
+    background-color: plum;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: whitesmoke;
+
+    /* Turn this object into a flex container for easy positioning of elements. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 24px;
+}
+
+.navbar img {
+    padding: 0px 40px;
+    width: 120px;
+}
+
+.navbar_links {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* So, like in the practice problem I did earlier, some elements have 
+    padding and margin automatically applied. Divs don't, but the ul elements
+    do. */
+}
+
+.navbar_links ul {
+    /* At THIS POINT (lowest level of where the individual sections of links are) is where
+    you can put the display: grid. */
+    display: grid;
+    grid-auto-flow: column;
+
+    list-style: none;
+
+    border-radius: 24px;
+
+    /* Set padding and margin to 0. Pretty sure this one just has inherent padding applied, 
+    but just being sure. */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar_links ul li {
+    padding: 40px;
+}
+
+/* Trying to style the navbar's links */
+.navbar_links a {
+    color: #9EA3F5;
+}
+
+.navbar_links a:hover {
+    color: #BBBEFE;
+}
+
+/* IFRAME ADJUSTMENT STYLING */
+.iframe_container {
+    padding: 40px 220px;
+}
+
+/* You have to style the a if you want to change the color of a link */
+.dl_button a {
+    color: #9EA3F5;
+    font-size: 24px;
+    padding: 8px 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: whitesmoke;
+
+    border-radius: 4px;
+}
+
+.dl_button a:hover {
+    color:#BBBEFE;
+}
+
+/* The iframe (contained) 
+    I think to solve the responsive iframe problem I'm gonna have to convert the pdf to an image and embed that instead
+*/
+
+.iframe_container img {
+
+    width: 100%;
+    height: 2000px;
+    min-height: max-content;
+
+    min-width: max-content;
+
+    box-shadow: 0px 0px 40px #a83ca8;
+}
+
+/* ENDING SECTION - Every page :) */
+
+.bottom_section {
+    position: relative;
+    text-align: center;
+}
+
+/* BACKGROUND STICKY IMAGE (God this was annoying) */
+
+.bg_container {
+    position: absolute;
+
+    left: -20px;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+.bg_container img {
+    width: 700px;
+    transform: translateY(20px);
+}
+
+/* Page-specific styling :) */
+
+.resume_navlinkbox {
+    background-color: #e8e8e8;
+}

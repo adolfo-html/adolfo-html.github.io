@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AFCIV - Projects</title>
+        
+        <link rel="stylesheet" href="projects.css">
+    </head>
+    <body>
+        <!-- Navbar - every page! -->
+        <div class="navbar">
+
+            <div class="navbar_contents">
+
+                <div class="icon">
+                    <img src="icon.png">
+                </div>
+
+                <div class="navlinks">
+                    <a href="home.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table of boxes (3 per row, resizes) linking to projects -->
+        <h1 class="header">Projects</h1>
+
+        <div class="linktable">
+
+            <!-- COPY AND PASTE THIS BLOCK when you want to present another project! -->
+            <a class="linkbox" href="projects.html">
+                <img src="eximg.png">
+                <div class="linkcontent">
+                    <h2 class="linkheader">Content Title</h1>
+                    <p class="linksubtitle">Small description goes here</p>
+                </div>
+            </a>
+
+            <a class="linkbox" href="projects.html">
+                <img src="eximg.png">
+                <div class="linkcontent">
+                    <h2 class="linkheader">Content Title</h1>
+                    <p class="linksubtitle">Small description goes here</p>
+                </div>
+            </a>
+
+            <a class="linkbox" href="projects.html">
+                <img src="eximg.png">
+                <div class="linkcontent">
+                    <h2 class="linkheader">Content Title</h1>
+                    <p class="linksubtitle">Small description goes here</p>
+                </div>
+            </a>
+
+            <a class="linkbox" href="projects.html">
+                <img src="eximg.png">
+                <div class="linkcontent">
+                    <h2 class="linkheader">Content Title</h1>
+                    <p class="linksubtitle">Small description goes here</p>
+                </div>
+            </a>
+            <a class="linkbox" href="projects.html">
+                <img src="eximg.png">
+                <div class="linkcontent">
+                    <h2 class="linkheader">Content Title</h1>
+                    <p class="linksubtitle">Small description goes here</p>
+                </div>
+            </a>
+            <a class="linkbox" href="projects.html">
+                <img src="eximg.png">
+                <div class="linkcontent">
+                    <h2 class="linkheader">Content Title</h1>
+                    <p class="linksubtitle">Small description goes here</p>
+                </div>
+            </a>
+            <a class="linkbox" href="projects.html">
+                <img src="eximg.png">
+                <div class="linkcontent">
+                    <h2 class="linkheader">Content Title</h1>
+                    <p class="linksubtitle">Small description goes here</p>
+                </div>
+            </a>
+
+        </div>
+        <script>
+            document.querySelectorAll('.linkbox').forEach((el, i) => {
+            el.style.animationDelay = `${i * 0.1}s`;
+            });
+        </script>
+    </body>
+</html>

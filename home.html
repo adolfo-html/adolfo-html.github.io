@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AFCIV - Home</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <!-- Navbar - every page! -->
+        <div class="navbar">
+
+            <div class="navbar_contents">
+
+                <div class="icon">
+                    <img src="icon.png">
+                </div>
+
+                <div class="navlinks">
+                    <a href="home.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animation section -->
+
+        <div class="sky_section section_1"></div>
+        <div class="sky_section section_2"></div>
+        <div class="sky_section section_3"></div>
+
+        <div class="title"><h1>AFCIV</h1></div>
+    </body>
+
+    <script>
+        // For loop to add a bunch of the same star elements to random points at the top
+        for (let i = 0; i < 60; i++) 
+        {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = Math.random() * 40 + '%';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.animationDelay = (2 + Math.random() * 1.5) + 's';
+            document.body.appendChild(star);
+        }
+    </script>
+</html>
