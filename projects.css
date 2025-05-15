@@ -144,3 +144,22 @@ body {
         transform: translateX(120px);
     }
 }
+
+/* Responsive styling */
+
+@media (max-width: 768px) {
+    .header {
+        margin: 40px auto;
+        transform: translateX(0);
+        transform: translateY(-20px);
+        animation: headerIn2 1s ease-out forwards;
+    }
+
+    @keyframes headerIn2 {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+}
