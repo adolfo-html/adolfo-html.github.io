@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Bodoni';
-    src: url('Bodoni.woff') format('woff');
+    src: url('bodoni.otf') format('opentype');
 }
 
 /* Basic page stuff before animation :) */
