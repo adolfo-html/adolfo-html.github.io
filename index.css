@@ -193,7 +193,7 @@ body {
 
     .title {
         font-size: 48px;
-        text-shadow: 8px 4px #9b82c3;
+        text-shadow: 16px 8px rgba(0,0,0,0.1);
     }
 
     .icon img {
