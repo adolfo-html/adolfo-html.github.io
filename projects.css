@@ -47,8 +47,6 @@ body {
 .navlinks a {
     color: black;
 
-    width: 60px;
-
     text-align: center;
     font-family: 'Raleway';
     text-decoration: none;
@@ -58,7 +56,7 @@ body {
 }
 
 .navlinks a:hover {
-    color: #9159eb;
+    color: #9b82c3;
 }
 
 .header {

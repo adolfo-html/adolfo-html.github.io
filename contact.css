@@ -46,10 +46,12 @@ body {
     font-family: 'Raleway';
     text-decoration: none;
     padding: 0 12px;
+
+    transition: color 0.3s ease;
 }
 
 .navlinks a:hover {
-    color: #c2abe7;
+    color: #9b82c3;
 }
 
 
