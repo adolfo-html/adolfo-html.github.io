@@ -1,21 +1,23 @@
 /* Basic page stuff (add font, etc) */
 
 @font-face {
-    font-family: 'Bodoni';
-    src: url('bodoni.otf') format('opentype');
+    font-family: 'Raleway';
+    src: url('Raleway.ttf') format('truetype');
 }
 
 body {
-    background-color: #c2abe7;
+    background-color: #e8e2f1;
 }
 
 /* Navbar */
 
 .navbar {
     position: sticky;
-    top: 8px;
+    top: 0px;
 
     z-index: 6;
+
+    background: #e8e2f1;
 }
 
 .navbar_contents {
@@ -41,30 +43,41 @@ body {
     color: black;
 
     text-align: center;
-    font-family: 'Bodoni';
+    font-family: 'Raleway';
     text-decoration: none;
     padding: 0 12px;
 }
 
+
 /* Resume section */
 
 .resume_container {
+    margin-top: 40px;
     padding: 40px 15%;
 }
 
-.resume_img {
+.resume_img {    
+    display: block;
+
     width: 100%;
     height: auto;
     max-width: 100%;
-    display: block;
     margin: 0 auto;
     
     box-shadow: 0px 0px 40px rgba(0,0,0,0.3);
 }
 
+
 /* Responsive styling */
 
 @media (max-width: 768px) {
+
+    /* Responsive navbar (every page) */
+
+    .navbar {
+        top: -60px;
+    }
+
     .navbar_contents {
         flex-direction: column;
         align-items: center;
@@ -74,6 +87,7 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 8px;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .title {
@@ -84,5 +98,9 @@ body {
     .icon img {
         height: 32px;
         margin: 10px 0;
+    }
+
+    .resume_container {
+        padding: 20px 5%;
     }
 }

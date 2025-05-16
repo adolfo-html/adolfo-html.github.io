@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: 'Bodoni';
-    src: url('bodoni.otf') format('opentype');
+    font-family: 'Raleway';
+    src: url('Raleway.ttf') format('truetype');
 }
 
 /* Basic page stuff before animation :) */
@@ -26,8 +26,8 @@ body {
     z-index: 6;
 
     opacity: 0;
-    animation: fadeIn 2s ease-out forwards;
-    animation-delay: 3s;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 2s;
 }
 
 .navbar_contents {
@@ -54,7 +54,7 @@ body {
     color: black;
 
     text-align: center;
-    font-family: 'Bodoni';
+    font-family: 'Raleway';
     text-decoration: none;
     padding: 0 12px;
 }
@@ -67,7 +67,7 @@ body {
     z-index: 6;
 
     font-family: 'Celestia';
-    font-size: 80px;
+    font-size: 160px;
     color: #fdd6a6;
     text-shadow: 16px 8px #9b82c3;
 
@@ -76,8 +76,8 @@ body {
     top: 50%;
 
     opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 2s;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.6s;
 }
 
 /* Sections for animation */
@@ -99,21 +99,21 @@ body {
     background-color: #b39adb;
     z-index: 1;
 
-    animation: skyDropInLow 3s ease-out forwards;
-    animation-delay: 0.8s;
+    animation: skyDropInLow 1s ease-out forwards;
+    animation-delay: 0.4s;
 }
 .section_2 {
     background-color: #a489ce;
     z-index: 2;
 
-    animation: skyDropInMed 3s ease-out forwards;
-    animation-delay: 0.4s;
+    animation: skyDropInMed 1s ease-out forwards;
+    animation-delay: 0.2s;
 }
 .section_3 {
     background-color: #9b82c3;
     z-index: 3;
 
-    animation: skyDropInHi 3s ease-out forwards;
+    animation: skyDropInHi 1s ease-out forwards;
     animation-delay: 0.0s;
 }
 
@@ -193,7 +193,7 @@ body {
 
     .title {
         font-size: 48px;
-        text-shadow: 16px 8px rgba(0,0,0,0.1);
+        text-shadow: 16px 8px 0px rgba(0,0,0,0.1);
     }
 
     .icon img {
