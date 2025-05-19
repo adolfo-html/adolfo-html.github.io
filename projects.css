@@ -5,11 +5,6 @@
     src: url('Raleway.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Celestia';
-    src: url('Celestia.otf') format('opentype');
-}
-
 body {
     background-color: #e8e2f1;
 }
