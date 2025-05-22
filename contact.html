@@ -50,20 +50,20 @@
 
         <!-- Actual input form (all fields required)-->
         <div class="form_container">
-            <form>
+            <form id="message_form">
                 <div class="input_info">
                     <div class="input_name_box">
                         <p>Your name</p>
-                        <input class="input_name" type="text" placeholder="First and last name" required>
+                        <input name="name" class="input_name" type="text" placeholder="First and last name" required>
                     </div>
                     <div class="input_email_box">
                         <p>Your email</p>
-                        <input class="input_email" type="text" placeholder="Your email address" required>
+                        <input name="email" class="input_email" type="text" placeholder="Your email address" required>
                     </div>
                 </div>
 
                 <h4>Send me a message!</h4>
-                <textarea class="input_message" placeholder="Type your message here..." required></textarea>
+                <textarea name="message" class="input_message" placeholder="Type your message here..." required></textarea>
                 <input class="send_button" type="submit" value="Send">
             </form>
         </div>
@@ -75,6 +75,28 @@
     <!-- For flashy animation -->
     <script>
 
+    </script>
+
+    <!-- For getting form data and sending to server.js -->
+    <script>
+        document.getElementById('message_form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            
+            await fetch('https://adolfo-html-github-io.onrender.com', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            alert('Message sent. Thank you!');
+        });
     </script>
 
     </body>

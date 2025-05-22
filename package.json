@@ -1,0 +1,25 @@
+{
+  "name": "new_resume_site",
+  "version": "1.0.0",
+  "description": "Mar 20 2025",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adolfo-html/read_more_books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adolfo-html/read_more_books/issues"
+  },
+  "homepage": "https://github.com/adolfo-html/read_more_books#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3"
+  }
+}
