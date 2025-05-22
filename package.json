@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/adolfo-html/read_more_books#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "nodemailer": "^7.0.3"
   }
