@@ -95,7 +95,10 @@
                 body: JSON.stringify(data)
             });
 
-            alert('Message sent. Thank you!');
+            if (response.ok) {
+                alert('Message sent. Thank you!');
+                location.reload();
+            }
         });
     </script>
 

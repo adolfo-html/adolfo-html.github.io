@@ -32,7 +32,7 @@ app.post('/submit', (req, res) => {
         from: email,
         to: process.env.EMAIL_USER,
         subject: `adolfo-html.github.io: ${name} sent a message`,
-        text: message
+        text: "email: " + email + "\n" + message
     };
     
     // Error handling & console log
