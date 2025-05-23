@@ -89,7 +89,7 @@
             };
 
             // Sending message/request to server
-            await fetch('https://adolfo-html-github-io.onrender.com/submit', {
+            const response = await fetch('https://adolfo-html-github-io.onrender.com/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
