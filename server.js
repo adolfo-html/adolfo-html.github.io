@@ -31,7 +31,7 @@ app.post('/submit', (req, res) => {
     const mailOptions = {
         from: email,
         to: process.env.EMAIL_USER,
-        subject: `Message from ${name}`,
+        subject: `adolfo-html.github.io: ${name} sent a message`,
         text: message
     };
     
