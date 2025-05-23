@@ -6,9 +6,7 @@ const app = express();
 require('dotenv').config();
 
 const cors = require('cors');
-app.use(cors({
-    origin: 'https://adolfo-html.github.io'
-}));
+app.use(cors());
 
 const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS;
