@@ -93,7 +93,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #d6c7ee;
     font-family: sans-serif;
 
     overflow: scroll;
@@ -140,7 +140,7 @@ body {
     resize: none;
 }
 
-.send_button {
+#send_button {
     width: 100%;
     background-color: #007BFF;
     color: white;
@@ -152,7 +152,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.send_button:hover {
+#send_button:hover {
     background-color: #0056b3;
 }
 
