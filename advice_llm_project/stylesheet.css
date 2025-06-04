@@ -3,14 +3,157 @@
     src:url(fonts/kind-sans-thin.otf);
 }
 
-/* Chat */
+/* Body/environment */
 
-.response_container {
-    padding: 0 30%;
+body {
+    background-color: white;
 }
 
-#responsebox {
+/* Whole interface */
+
+.header h1 {
+    text-align: center;
+    font-size: 80px;
     font-family: 'Kind Sans';
-    font-weight: bold;
-    font-size: 20px;
+}
+
+.interface_container {
+    padding: 0 20%;
+    align-items: center;
+}
+
+/* Logo above chat box */
+
+.logo_design {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100px;
+}
+
+.eye1 {
+    position: absolute;
+    
+    left: 0;
+
+    width: 40px;
+    height: 0;
+
+    border-radius: 50%;
+
+    background-color: black;
+    animation: eyeOpen 0.7s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.eye2 {
+    position: absolute;
+    right: 0;
+
+    width: 40px;
+    height: 0;
+
+    border-radius: 50%;
+
+    background-color: black;
+
+    animation: eyeOpen 0.7s ease-out forwards;
+    animation-delay: 1s;
+}
+@keyframes eyeOpen { /* Eyes are INITIALLY 0 width and height. Animation opens them! */
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+.mouth {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    margin-inline: auto; /* Centers this div */
+
+    width: 95%;
+    height: 4px;
+    border: 1px solid black;
+
+    background-color: black;
+
+    animation: outwardSpread 1s ease-out forwards;
+}
+@keyframes outwardSpread {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+/* Chat */
+
+.form_container {
+    display: flex;
+    justify-content: center;
+}
+  
+form {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+textarea {
+    resize: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#submit_button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#submit_button:hover {
+    background-color: #555;
+}
+  
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Response */
+
+#responsebox {
+    font-family: sans-serif;
+}
+
+/* Responsive styling */
+
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+    #submit_button {
+        padding: 20px 0;
+        width: 100%;
+    }
 }
