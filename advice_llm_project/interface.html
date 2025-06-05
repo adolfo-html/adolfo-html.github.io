@@ -20,13 +20,14 @@
 
     <body>
         <div class="header">
-            <h1>Dadvice AI</h1>
+            <h1>Dadvice</h1>
+            <p>loving, helpful responses to tough questions</p>
         </div>
 
         <div class="interface_container">
             <div class="logo_design">
-                <div class="eye1"></div>
-                <div class="eye2"></div>
+                <div id="eye1"></div>
+                <div id="eye2"></div>
                 <div class="mouth"></div>
             </div>
 
@@ -42,7 +43,47 @@
             </div>
         </div>
 
+        <div class="copyright">
+            <p><i>©2025 Adolfo Chavez. All Rights Reserved.</i></p>
+        </div>
+
         <!-- Script that sends textarea input on form submit -->
         <script src="queryToModel.js"></script>
+
+        <!-- Script for random blink animation -->
+        <script>
+            const eye1 = document.getElementById("eye1");
+            const eye2 = document.getElementById("eye2");
+
+            eye1.classList.add("eyeOpen");
+            eye2.classList.add("eyeOpen");
+
+            function blinkEyes() {
+                // Add the blinker class
+                eye1.classList.remove("eyeOpen");
+                eye2.classList.remove("eyeOpen");
+                eye1.classList.add("blinker");
+                eye2.classList.add("blinker");
+
+                // Remove the class after animation finishes so we can re-add it later
+                setTimeout(() => {
+                    eye1.classList.remove("blinker");
+                    eye2.classList.remove("blinker");
+                }, 500); // Match animation duration
+            }
+
+            // Call blinkEyes() at random intervals
+            function randBlink() {
+                const interval = Math.random() * 5000 + 5000; // 5 + 0-5 seconds
+                setTimeout(() => {
+                    console.log("blink");
+                    blinkEyes();
+                    randBlink();
+                }, interval);
+            }
+
+            randBlink(); // Start blinking loop
+
+        </script>
     </body>
 </html>

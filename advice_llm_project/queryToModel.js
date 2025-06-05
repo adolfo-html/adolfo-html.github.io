@@ -9,7 +9,7 @@ async function promptRequest(e) { // Declaring the function
     document.getElementById('submit_button').disabled = true;
 
     // Logging what's happening
-    document.getElementById("submit_button").value = "Sending...";
+    document.getElementById("submit_button").value = "Thinking...";
     console.log("communicating with server ...");
 
     // SENDING the request
@@ -29,7 +29,7 @@ async function promptRequest(e) { // Declaring the function
 
     document.getElementById("responsebox").innerText = data.reply;
     document.getElementById('submit_button').disabled = false;
-    document.getElementById('submit_button').value = "Send";
+    document.getElementById('submit_button').value = "Ask Dad";
 }
 
 // Setting the event listener so that the function runs every time the form is submitted.
