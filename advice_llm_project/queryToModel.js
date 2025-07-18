@@ -13,7 +13,7 @@ async function promptRequest(e) { // Declaring the function
     console.log("communicating with server ...");
 
     // SENDING the request
-    const response = await fetch("https://athletes-entering-baghdad-capabilities.trycloudflare.com/generate", { // For local testing, replace the URL with localhost:5000!
+    const response = await fetch("https://mainstream-western-renewal-sega.trycloudflare.com/generate", { // For local testing, replace the URL with localhost:5000!
         method: "POST",
         headers: {
             "Content-Type": "application/json"
