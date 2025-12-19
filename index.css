@@ -73,7 +73,7 @@ body {
 
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 55%;
+    top: 50%;
 
     opacity: 0;
     animation: fadeIn 1s ease-out forwards;
